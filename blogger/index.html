@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogger Application</title>
+
+    <!-- google font link : Poppins  -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,400;1,500;1,600&display=swap"
+        rel="stylesheet">
+    <!-- css file -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media_queries.css">
+
+    <!-- pagination  -->
+    <link rel="stylesheet" href="https://uicdn.toast.com/tui.pagination/latest/tui-pagination.css" />
+    <script src="https://uicdn.toast.com/tui.pagination/latest/tui-pagination.js"></script>
+
+</head>
+
+<body>
+    <!-----------------------------------navigation  bar --------------------------------->
+    <nav class="navbar">
+        <img src="assests/blog-1.jpg" class="logo" alt="logo">
+        <ul class="links-container">
+            <li class="link-item"><a href="#" class="link">Home</a></li>
+            <li class="link-item"><a href="#blogs" class="link">Blogs</a></li>
+            <li class="link-item"><a href="#write-post" class="link">Write Post</a></li>
+            <li class="link-item"><a href="login.html" class="link">Sign In</a></li>
+            <li class="link-item"><a href="#contact" class="link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-----------------------------------header  section --------------------------------->
+    <header class="header">
+        <div class="content">
+            <h1 class="heading">
+                <span class="small">Welcome to the world of</span>
+                <span class="no-fill">Blogging</span>
+            </h1>
+            <a href="#blogs" class="btn">Start Reading</a>
+        </div>
+    </header>
+
+    <!-- <h1 id="test">HiIII</h1> -->
+
+    <!-----------------------------------blog  section --------------------------------->
+    <section class="blogs-section" id="blogs">
+        <!-- testing blog section by creating a temp div  -->
+        <div class="blog-card">
+            <img src="assests/headerbg.jpg" class="blog-image" alt="">
+            <h2 class="blog-title">Lorem ipsum dolor sit amet consectetur.</h2>
+            <p class="blog-overview">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt incidunt fugiat quos
+                porro repellat harum. Adipisci tempora corporis rem cum.</p>
+            <a href="/" class="btn dark">Read more</a>
+        </div>
+    </section>
+    <div id="pagination" class="tui-pagination"></div>
+    <hr>
+    <!-----------------------------------write post section --------------------------------->
+    <section class="write-post" id="write-post">
+        <h2>Write a new Post</h2>
+        <div class="banner">
+            <input type="file" accept="image/*" id="banner-upload" hidden>
+            <label for="banner-upload" class="banner-upload-btn">Upload Banner</label>
+        </div>
+
+        <div class="blog">
+            <textarea type="text" class="title" placeholder="WRITE YOUR TITLE..."></textarea>
+            <textarea type="text" class="article" placeholder="Start writing here..."></textarea>
+        </div>
+
+        <div class="blog-options">
+            <button class="btn dark publish-btn">Publish Blog</button>
+            <input type="file" accept="image/*" id="image-upload" hidden>
+            <label for="image-upload" class="btn grey upload-btn">Upload Image</label>
+        </div>
+    </section>
+
+    <!-----------------------------------Contact section --------------------------------->
+
+    <!--------------------- starting of contact section  --------------------------->
+
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title">Read, Write and Expand your world</h2>
+            <div class="contact-content">
+                <div class="column one">
+                    <h3>The Blog</h3>
+                    <p>Visit our site blog for the latest news, product updates, and tips and tricks.</p>
+                    <button class="btn dark"><a href="#blogs" id="contact-btn"> Read our Blog</a></button>
+                </div>
+                <div class="column two">
+                    <h3>Join Us</h3>
+                    <p>Our team is home to engineers, journalists, artists, and creatives of all stripes.</p>
+                    <button class="btn dark">View open Positions</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---------------starting of footer section---------------- -->
+    <!-- <hr> -->
+    <section class="footer">
+        <div class="footer-logo">
+            <img src="assests/blog-1.jpg" class="logo" alt="logo">
+        </div>
+        <div class="container">
+            <a href="https://www.linkedin.com/login?fromSignIn=true&trk=guest_homepage-basic_nav-header-signin"
+                target="_blank" class="linkedin">Terms</a>
+            <a href="https://accounts.google.com/signin/v2/identifier?hl=en&continue=https%3A%2F%2Fwww.google.com%3Fhl%3Den-US&ec=GAlA8wE&flowName=GlifWebSignIn&flowEntry=AddSession"
+                target="_blank" class="email">Privacy</a>
+            <a href="https://github.com/login" target="_blank" class="github">Help</a>
+        </div>
+    </section>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
